@@ -1,0 +1,14 @@
+# Spear Dash configuration
+# Items that trigger the dash (Shift + Right Click) and their actionbar color.
+# Format: MATERIAL: "startColor:endColor" (hex), the time text shows a slight gradient between them.
+dash-items:
+  NETHERITE_SPEAR: "#CE93D8:#6A1B9A"
+  NETHERITE_SWORD: "#EF5350:#B71C1C"
+  NETHERITE_AXE: "#A5D6A7:#1B5E20"
+  MACE: "#FFD54F:#F57F17"
+
+# How hard the dash pushes you (higher = faster / further)
+dash-power: 1.8
+
+# Cooldown in seconds before you can dash again
+cooldown-seconds: 5.0

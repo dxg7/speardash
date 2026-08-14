@@ -1,0 +1,8 @@
+name: speardash
+version: '${version}'
+
+main: speardash.Speardash
+bootstrapper: speardash.SpeardashBootstrap
+loader: speardash.SpeardashLoader
+api-version: '1.21.11'
+load: POSTWORLD
