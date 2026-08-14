@@ -114,8 +114,6 @@ public final class Speardash extends JavaPlugin implements Listener {
             return;
         }
 
-        event.setCancelled(true);
-
         long now = System.currentTimeMillis();
         Map<Material, Long> playerCooldowns = cooldowns.computeIfAbsent(player.getUniqueId(), k -> new HashMap<>());
         Long until = playerCooldowns.get(item.getType());
@@ -127,12 +125,13 @@ public final class Speardash extends JavaPlugin implements Listener {
             return;
         }
 
+        event.setCancelled(true);
+
         playerCooldowns.put(item.getType(), now + (long) (cooldownSeconds * 1000.0));
         Map<Material, Long> ready = readyItems.get(player.getUniqueId());
         if (ready != null) {
             ready.remove(item.getType());
         }
-        player.setCooldown(item.getType(), (int) (cooldownSeconds * 20.0));
 
         Vector direction = player.getEyeLocation().getDirection().normalize();
         player.setVelocity(direction.multiply(dashPower));
