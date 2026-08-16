@@ -1,4 +1,4 @@
-# ⚡ SpearDash
+#  SpearDash
 
 > Spear Mace FFA | Dash plugin
 
@@ -8,7 +8,7 @@ Launch yourself toward where you're looking with your **netherite spear, sword, 
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Dash mechanic** — Shift + Right Click with a dash item propels you in the direction you're looking.
 - **Per-item cooldowns** — each dash item has its own cooldown, so you can chain `spear → sword → axe → mace`.
@@ -18,14 +18,14 @@ Launch yourself toward where you're looking with your **netherite spear, sword, 
 - **Custom items** — `/ffaitems` gives you *Dash Spear*, *Dash Sword*, *Dash Axe* and *Dash Mace*, each with its own color.
 - **Hot reload** — tweak the config and `/ffareload`, no server restart needed.
 
-## 🎮 Commands
+##  Commands
 
 | Command | Description |
 | --- | --- |
 | `/ffaitems <spear\|sword\|axe\|mace>` | Give yourself a dash item (tab-complete supported) |
 | `/ffareload` | Reload the plugin config on the fly |
 
-## 🛠 Configuration
+##  Configuration
 
 ```yaml
 # Items that trigger the dash and their actionbar gradient colors
@@ -44,7 +44,7 @@ cooldown-seconds: 5.0
 
 > Any `Material` name works as a key in `dash-items`. Colors are hex `#RRGGBB:#RRGGBB`.
 
-## 📦 Installation
+##  Installation
 
 1. Drop `speardash-*.jar` into your server's `plugins/` folder.
 2. Start (or `/reload confirm`) the server.
@@ -52,7 +52,7 @@ cooldown-seconds: 5.0
 
 - **Requirements:** Paper 1.21.11+ · Java 21+
 
-## 🏗 Building
+##  Building
 
 ```bash
 ./gradlew build
@@ -62,4 +62,3 @@ The jar lands in `build/libs/`.
 
 ---
 
-Made with 💜 for Spear Mace FFA.
